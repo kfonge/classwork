@@ -73,6 +73,16 @@ else {
     console.log("Hey, you're not a cow.")
 }
 
+// E - Driver's Ed
+
+let age = 25
+if (age >= 16){
+    console.log('Here are the keys!') 
+    } 
+    else if (age < 16) {
+        console.log("Sorry you're too young.")
+}
+
 
 
 
