@@ -65,4 +65,14 @@ console.log(48 == '48');
 
 // Part D - The farm
 
+let animal = 'dog'
+if (animal == 'cow'){
+    console.log('mooooooo');
+}
+else {
+    console.log("Hey, you're not a cow.")
+}
+
+
+
 
