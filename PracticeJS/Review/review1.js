@@ -184,7 +184,7 @@ e.g.    let x = 0
 
 // D. Change Values
 // Given the following array: 
-const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+// const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
 
 // 1. Access 3rd element 
 
@@ -203,14 +203,14 @@ const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
 // E. Mix It Up
 
 // given the array:
- myArray = [5, 10, 500, 20]
+//  myArray = [5, 10, 500, 20]
 // 1. Add the string 'Aegon' to end. Add another sting of choice
 
- myArray.push('Aegon', 'Afternoon');
+//  myArray.push('Aegon', 'Afternoon');
 // console.log(myArray);
 
 // 2. Remove 5 from beginning of array
- myArray.shift();
+//  myArray.shift();
 // console.log(myArray);
 
 // 3. add "Bob Marley" to beginnging of array
@@ -344,20 +344,42 @@ const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
 
 // E. getTwoLengths
 //why doesnt this work with '' around the parameters; how do you set default data types for string1 and 2 as strings?
-    let getTwoLengths = (string1, string2) =>{
-        let array = []
-        array.push(string1.length , string2.length)
-        console.log(array)
-    }
-     getTwoLengths('cat', 'animal');
+    // let getTwoLengths = (string1, string2) =>{
+    //     let array = []
+    //     array.push(string1.length , string2.length)
+    //     console.log(array)
+    // }
+    //  getTwoLengths('cat', 'animal');
 
 // F. getMultipleLengths
 
-const getMultipleLengths = (paramArray) => {
-paramArray = ['string1','string2','string3']
-let resultArray = []
-for(let i = 0; i < paramArray.length; i++){
+// let animals = ['cats','fish','gorilla']; //always put globally scopped variables at the top even if only referencd at end of code block
 
+// const getMultipleLengths = (paramArray) => {
+//     let resultArray = [];
+//     console.log (resultArray);
+//     for(let i = 0; i < paramArray.length; i++){
+         
+//         console.log(i);
+
+//         resultArray.push(paramArray[i].length);
+        
+//     }return resultArray;
+// }
+// console.log(getMultipleLengths(animals));
+// result should be [4, 4, 7]
+
+// // G. MaxOfThree
+
+const maxOfThree = (num1, num2, num3) => {
+    if (num1 == num2 && num2 == num3) {
+        return num1;
+}   else if (num1 > num2 && num1 > num3){
+        return num1;
+}   else if (num2 > num3 && num2 > num1){
+        return num2;
+}   else if (num3 > num2 && num3 > num1){
+        return num3;
+}   
 }
-paramArray.push(array)
-}
+console.log(maxOfThree(7, 100, 29))
