@@ -32,7 +32,7 @@ e.g.    let x = 0
 
 6.  More time should be spent thinking/planning. less time coding. is it 50/50 or 60/40     
     */
-   
+
 // //Part B - Strings
 // let firstVariable = 'Hello World';
 //     firstVariable = 3;
@@ -65,37 +65,35 @@ e.g.    let x = 0
 
 // Part D - The farm
 
-// let animal = 'dog'
-// if (animal == 'cow'){
-//     console.log('mooooooo');
-// }
-// else {
-//     console.log("Hey, you're not a cow.")
+// let animal = "dog"
+// if (animal == "cow") {
+//   console.log("mooooooo")
+// } else {
+//   console.log("Hey, you're not a cow.")
 // }
 
 // E - Driver's Ed
 
 // let age = 25
-// if (age >= 16){
-//     console.log('Here are the keys!') 
-//     } 
-//     else if (age < 16) {
-//         console.log("Sorry you're too young.")
+// if (age >= 16) {
+//   console.log("Here are the keys!")
+// } else if (age < 16) {
+//   console.log("Sorry you're too young.")
 // }
 
 //II.A - Loops - The basics
-
 // write a loop that will print out all numbers 0 to10 inclusive
-// for (let i = 0; i <= 10; i++ ){
-//     console.log(i);
+
+// for (let i = 0; i <= 10; i++) {
+//   console.log(i)
 // }
 
 // write a loop that will print out all numbers 10 to 400 inclusive
-// for (let i = 10; i <= 400; i++){
-//     console.log(i);
+// for (let i = 10; i <= 400; i++) {
+//   console.log(i)
 // }
 
-// write a loop that will print out every 3rd number 
+// write a loop that will print out every 3rd number
 // starting with 12 no higher than 4000
 
 // for( let i = 12; i <= 4000; i += 3){
@@ -104,19 +102,17 @@ e.g.    let x = 0
 
 // II.B Get even
 
-// for( let i = 1; i <= 100; i++){
-    
-//     if (i%2 == 0){
-//         console.log (i + ' <-- is an even number' )
-//     }
-//     else{
-//         console.log(i);
-//     }
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 2 == 0) {
+//     console.log(i + " <-- is an even number")
+//   } else {
+//     console.log(i)
+//   }
 // }
 
 // II C. High Five
 // for( let i = 0; i <= 100; i++){
-    
+
 //      if (i%5 == 0 && i%3 != 0){
 //          console.log ('I found a ' + i + " High five!" )
 //     }
@@ -127,36 +123,35 @@ e.g.    let x = 0
 //      else if (i%3 == 0 && i%5 == 0 ){
 //          console.log ('I found a ' + i + ' High five - Three is a crowd')
 //      }
-// }
 
 // II D. Savings Account
-// 1.
+// 1
 // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // const sum = arr.reduce((accumulator, currentValue) => {
-//     return accumulator + currentValue;
-// }, 0); 
+//   return accumulator + currentValue
+// }, 0)
 
 // console.log(sum);
 
 //2.
-// let bankAcct = 0;
+// let bankAcct = 0
 
-// for(let i = 1; i <= 100; i++){
-//      bankAcct += 2*i;
+// for (let i = 1; i <= 100; i++) {
+//   bankAcct += 2 * i
 // }
 
-// console.log (bankAcct)
+// console.log(bankAcct)
 
 // III Arrays & Control flow
 
 // A. Talk About it
 // 1. What are the things in an array called?
-// items
+//      Elements
 // 2. Do arrays guarantee those things will be in order?
-// no, arrays are not typically/always ordered--that would be a sorted array. However each element is indexed so the original order can be changed
+//      No, arrays are not typically/always ordered--that would be a sorted array. However each element is indexed so the original order can be changed
 // 3. What real-life thing could you model with an array?
-// A grocery list, a list of things in your purse. 
-// Any sort of list or collection of items really
+//      A grocery list, a list of things in your purse.
+//      Any sort of list or collection of items really
 
 // B. Easy Does It
 
@@ -180,13 +175,11 @@ e.g.    let x = 0
 
 // console.log(randomThings)
 
-
-
 // D. Change Values
-// Given the following array: 
+// Given the following array:
 // const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
 
-// 1. Access 3rd element 
+// 1. Access 3rd element
 
 // console.log(ourClass[2])
 
@@ -260,15 +253,18 @@ e.g.    let x = 0
 //     "marshmallow peeps"
 //   ];
 
-// 1. 
+// 1.
 // console.log('Kristyn is rocking that ' + kristynsCloset[2]+ ' today!')
 // 2.
-// kristynsCloset.splice(6,0, 'raybans'); 
+// kristynsCloset.splice(6,0, 'raybans');
 // console.log(kristynsCloset)
-// 3. 
+// 3.
 // kristynsCloset.splice(5,1,'stained knit hat');
 // console.log(kristynsCloset)
+
+
 // Thom's closet is more complicated. Check out this nested data structure!!
+
 //    const thomsCloset = [
 //      [
 //       // These are Thom's shirts
@@ -288,7 +284,7 @@ e.g.    let x = 0
 //       "raybans"
 //     ]
 // ]
-// 4. outfit for Thom, starting with first element in shirts 
+// 4. Outfit for Thom, starting with first element in shirts
 
 // console.log(thomsCloset[0][0])
 
@@ -298,7 +294,7 @@ e.g.    let x = 0
 // 6. access an accessory for Thom
 // console.log(thomsCloset[2][1])
 
-// 7. 
+// 7.
 // console.log('Thom is ready for the fall weather, wearing his ' + thomsCloset[0][0] + ',' + thomsCloset[1][1] + ', and a ' + thomsCloset[2][1]'.')
 
 // 8. Modify pjs to footie pajamas
@@ -324,10 +320,10 @@ e.g.    let x = 0
 // D. isVowel
 
 // let result;
-// let isVowel = ('char') => { 
+// let isVowel = ('char') => {
 //     result = ('char' == "a"|| char == "A"|| char == 'e'|| char == "E" || char == "i"|| char == "I"|| char == "o" || char == "O" || char =="u"|| char == 'U');
 //     if ('char'.length > 1){
-//         console.log('Invalid - this function only takes single characters as input')   
+//         console.log('Invalid - this function only takes single characters as input')
 //     } else {
 //             return result;
 //         }
@@ -341,15 +337,14 @@ e.g.    let x = 0
 //let result = letter.toLowerCase() == "a"  letter == "e"  letter =="i"  letter =="o"  letter =="u";
 //return result;
 
-
 // E. getTwoLengths
-//why doesnt this work with '' around the parameters; how do you set default data types for string1 and 2 as strings?
-    // let getTwoLengths = (string1, string2) =>{
-    //     let array = []
-    //     array.push(string1.length , string2.length)
-    //     console.log(array)
-    // }
-    //  getTwoLengths('cat', 'animal');
+
+// let getTwoLengths = (string1, string2) =>{
+//     let array = []
+//     array.push(string1.length , string2.length)
+//     console.log(array)
+// }
+//  getTwoLengths('cat', 'animal');
 
 // F. getMultipleLengths
 
@@ -359,11 +354,11 @@ e.g.    let x = 0
 //     let resultArray = [];
 //     console.log (resultArray);
 //     for(let i = 0; i < paramArray.length; i++){
-         
+
 //         console.log(i);
 
 //         resultArray.push(paramArray[i].length);
-        
+
 //     }return resultArray;
 // }
 // console.log(getMultipleLengths(animals));
@@ -371,15 +366,177 @@ e.g.    let x = 0
 
 // // G. MaxOfThree
 
-const maxOfThree = (num1, num2, num3) => {
-    if (num1 == num2 && num2 == num3) {
-        return num1;
-}   else if (num1 > num2 && num1 > num3){
-        return num1;
-}   else if (num2 > num3 && num2 > num1){
-        return num2;
-}   else if (num3 > num2 && num3 > num1){
-        return num3;
-}   
+// const maxOfThree = (num1, num2, num3) => {
+//     if (num1 == num2 && num2 == num3) {
+//         return num1;
+// }   else if (num1 > num2 && num1 > num3){
+//         return num1;
+// }   else if (num2 > num3 && num2 > num1){
+//         return num2;
+// }   else if (num3 > num2 && num3 > num1){
+//         return num3;
+// }
+// }
+// console.log(maxOfThree(7, 100, 29))
+
+// H. Print Longest Word
+
+// let words = ['cat','long', 'friendship', 'pizzayummmmmmmmm', 'magician','extremely']
+
+// printLongestWord = arrayOfStrings => {
+//     let longestWord = arrayOfStrings[0];                             // let's say the first word in the array is the longest (we'll check it against all other words in the array and replace the test word with anything longer than it)
+//     for (let i = 1; i < arrayOfStrings.length; i++) {                // let's loop through the array starting from index 0
+//          if (arrayOfStrings[i].length > longestWord.length) {         // comparing the length of the hypothesized longest to the words at all other indexes
+//              longestWord = arrayOfStrings[i];                         // replace the value of longestWord with the value of the string that beat it (passed the test)
+//          }
+//      }
+//      return longestWord;
+// }
+
+// console.log(printLongestWord(words));
+
+// Objects
+
+// A.  Make a User
+// 1-2.
+let user = {
+  name: "Sam",
+  email: "sam@gmail.com",
+  age: 23,
+  purchased: [],
 }
-console.log(maxOfThree(7, 100, 29))
+
+// B. Update the User
+// 1.
+
+// user.email = 'sam.smith@gmail.com'
+// console.log(user);
+// OR
+// user['email'] = 'samgsmith@gmail.com'
+// console.log(user);
+
+// 2. incement age
+
+// user.age++;
+// console.log(user);
+
+// C. Adding Keys and Values
+// use bracket notation to add a new key location and its corresponding value
+
+// user['location'] = 'somewhere';
+// console.log(user.location);
+
+// D. Shopaholic!
+
+// D. 1 Add carbohydrates to the purchased array
+// user.purchased.push('carbohydrates');
+// console.log(user.purchased);
+
+// D. 2
+// user.purchased.push('peace of mind');
+// console.log(user.purchased);
+
+// D. 3
+// user.purchased.push('Merino jodhpurs');
+
+// D. 4
+// console.log(user.purchased[2]);
+
+// E. Object within Object
+
+// 1. write a friend object into user
+
+// user.friend = {'name': 'Joe', 'age': 25, 'purchased':[], 'location': 'downtown'};
+// console.log(user);
+
+// E. 2
+// console.log(user.friend['name']);
+
+// E. 3
+// console.log(user.friend['location']);
+
+// E. 4
+// user.friend['age'] = 55;
+// console.log(user.friend['age'])
+
+// E. 5,6
+// user.friend.purchased.push('The One Ring', "A latte")
+
+// E. 7
+// console.log(user.friend.purchased[1])
+
+// F. Loops
+
+// for(let i = 0; i< user.purchased.length; i++){
+//     console.log(user.purchased[i]);
+// }
+
+// F. 2
+
+// for(let i =0; i<user.friend.purchased.length; i++){
+//     console.log(user.friend.purchased[i]);
+// }
+
+// G. Functions can operate on Objects
+
+// G 1.
+// const updateUser = () => {
+//     user.age++;
+//     user.name.toUpperCase();
+// }
+
+// updateUser();
+// console.log(user.name, user.age);
+
+// G. 2.
+let person = new user
+oldAndLoud = (person) => {
+    person.age++;
+    person.name.toUpperCase;
+}
+
+oldAndLoud(user.friend)
+console.log(user.friend)
+
+// Cat Combinator
+// 1. Mama Cat
+
+let cat1 = {
+    "name": Frisky,
+    "breed": Calico,
+    "age": 7
+}
+console.log(cat1.name)
+console.log(cat1.age)
+
+// 2. Papa Cat
+let cat2 = {
+    "name": "Crinkles",
+    "breed": "Tiger cat",
+    "age": 9
+}
+
+// 3. Combine Cats
+combineCats = (mama, papa) => {
+    console.log(mama, papa);
+}
+
+combineCats(cat1, cat2);
+
+let cat3 = {
+    "name": mama.name + papa.name,
+    "age": 1,
+    "breed": mama.breed + "-" + papa.breed
+}
+
+
+// // combine cats
+// function combineCats(cat1, cat2) {
+//   let twoCats = {
+//     age: 1,
+//     name: cat1.name + cat2.name,
+//     breed: cat1.breed + cat2.breed,
+//   }
+//   return twoCats
+// }
+// console.log(cat1, cat2)
