@@ -77,26 +77,56 @@ const favMovies = [
 
 //1.
 
-favMovies.sort()
-console.log(favMovies)
+// favMovies.sort()
+// console.log(favMovies)
 // the .sort method put the elements in order alphabetically by the first character of each element
 
 //2.
-favMovies.pop()
-console.log(favMovies)
+// favMovies.pop()
+// console.log(favMovies)
 //expected output - The Ring removed from array (after sorting, the ring was the last element)
 
 
 //3. 
-favMovies.push('Gardians of the Galaxy')
-console.log(favMovies)
+// favMovies.push('Gardians of the Galaxy')
+// console.log(favMovies)
 
 //4.
-favMovies.reverse()
-console.log(favMovies.reverse)
+// favMovies.reverse()
+// console.log(favMovies)
 
-/////////// Where is Waldo
-///////////
+//5.
+// favMovies.shift()
+//expected outcome: first element, 'Jaws' removed
+// console.log(favMovies)
+
+//6. unshift adds an element tofront of an array
+// favMovies.unshift('Matilda')
+// console.log(favMovies.unshift('Matilda'))
+//unshift returns the new length of the array, in this case, 5
+
+//7.
+favMovies.splice(3, 1, "Avatar")
+//yes, splice mutates the original array
+
+//8-10 using original favMovies which has 4 elements
+let movieSlice = favMovies.slice(2, 4)
+console.log(movieSlice)
+// Rather than mutate the original array, slice
+// in line 113 the shallow copy of the array is stored
+// in a variable, movieSlice
+
+//11.
+console.log(favMovies.indexOf('Fast and Furious'))
+// returns -1 because "Fast and Furious" is not in the array.
+
+// 12.
+// Declaring with const means that the element or variable cannot be redeclared. 
+// However this does not change the fact that the array itself is mutable (you can change the elements or contents)
+
+
+///////// Where is Waldo///////////
+////////////////////////////////////////////
 
 //////////////
 ///////Excited Kitten
