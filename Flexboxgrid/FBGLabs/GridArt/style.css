@@ -10,6 +10,16 @@ body {
     grid-gap: 4px;
     grid-template-rows: 100px 100px 1fr 1fr;
     grid-template-columns: 80px 1fr 30px;
+    background-color: black;
+    /* by setting fontsize to 0, line 15 makes it so the grid line numbers disappear as Rixio requested. gridline numbers are text within each   */
+    font-size: 0;
+  
+    grid-template-areas:
+     /* lines 17-20 are extremely important and set up the template distribution of rows and columns */
+    "one two two"
+    "three two two"
+    "four five six"
+    "four five seven"
 }
 
 .item {
@@ -19,22 +29,34 @@ body {
 .one {
     grid-row: 1;
     grid-column: 1;
+    grid-area: one;
+    
 }
 
 .two {
+    grid-area: two;
+    background-color: red;
+    
 }
 
 .three {
+    grid-area: three;
 }
 
 .four {
+    grid-area: four;
+    background-color: blue;
 }
 
 .five {
+    grid-area: five;
 }
 
 .six {
+    grid-area: six;
 }
 
 .seven {
+    grid-area: seven;
+    background-color: yellow;
 }
