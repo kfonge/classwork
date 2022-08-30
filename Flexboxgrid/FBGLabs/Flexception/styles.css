@@ -1,0 +1,39 @@
+
+/* most flex properties should be applied to the main(largest) container
+and will then affect the items within the container */
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    height: 100vh; 
+    width: 100vw;
+    /* vh and vw makes it take up the full screen height and width */
+}
+section {
+    display: flex;
+    background-color: blue;
+    height: 120px;
+    width: 120px;    
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+  } 
+
+.cat div{
+    display: flex;
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    justify-content:space-between;
+  }
+
+  div{
+    display: flex
+    background-color: blue;
+    height: 8px;
+    width: 8px;
+
+  }
