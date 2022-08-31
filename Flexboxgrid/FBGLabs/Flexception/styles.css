@@ -2,38 +2,39 @@
 /* most flex properties should be applied to the main(largest) container
 and will then affect the items within the container */
 body{
-    background-color: black;
+    background-color: rgb(15, 97, 163);
     display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
     height: 100vh; 
     width: 100vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
     /* vh and vw makes it take up the full screen height and width */
 }
 section {
     display: flex;
-    background-color: blue;
-    height: 120px;
-    width: 120px;    
+    background-color: rgb(9, 9, 89);
+    height: 150px;
+    width: 150px;    
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    
+    align-content: center;
   } 
 
-.cat div{
+.smallbox div{
     display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: black;
-    height: 15px;
-    width: 15px;
-    justify-content:space-between;
+    height: 20px;
+    width: 20px;
+    justify-content:center;
+    
   }
 
   div{
-    display: flex
     background-color: blue;
-    height: 8px;
-    width: 8px;
-
+    height: 10px;
+    width: 10px;
+    outline: 1px solid white;
   }
