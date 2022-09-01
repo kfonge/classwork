@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // Part 7
   //create the new elements first (<div class = blogpost>, <h2>, and <p>), then append them where they belong
   let blogPost = document.createElement("div")
-  blogPost.classList.add("blog-post")
+  blogPost.classList.add("blog-post", "purple")
   let main = document.querySelector(".main")
   document.querySelector(".main").appendChild(blogPost)
 
@@ -88,15 +88,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // Part 9
 
   let allPosts = document.querySelectorAll(".blog-post")
-  
-  for (i = 0; i < allPosts.length; i++){
+
+  for (i = 0; i < allPosts.length; i++) {
     let post = allPosts[i]
     post.addEventListener("mouseout", (e) => {
-      post.classList.toggle(".purple")
+      post.classList.toggle("purple")
     })
     post.addEventListener("mouseenter", (e) => {
-      post.classList.toggle(".red")
+      post.classList.toggle("red")
     })
   }
-  
 })
