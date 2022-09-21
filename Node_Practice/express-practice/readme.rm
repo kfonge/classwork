@@ -1,0 +1,6 @@
+Web Application frameworks do 3 things
+1. define routes
+2. process http requests
+3.
+
+- express is built around http module

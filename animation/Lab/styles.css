@@ -1,0 +1,118 @@
+/* lab exercise 1 */
+
+/* div 1 */
+
+
+/* body {
+    margin: 0;
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+#container {
+    border: 1px solid grey;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item {
+    width: 100px;
+    height: 50px;
+    border: 1px solid white;
+}
+.item:nth-child(even) {
+    background-color: rgb(56, 55, 53);
+}
+
+
+h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 50%;
+    color: black;
+    transition-property: color;
+    transition-duration: 5s;
+    transition-delay: 4s;
+}
+ 
+/*  ANIMATION RELATED BELOW */
+ 
+ 
+ 
+/*  TRANSITION PROPERTY  */
+ 
+/* base class */
+.item-1 {
+    background-color: black;
+    width: 100px;
+    /* LONG FORM */
+      /*  specifiy a property to watch for changes */
+    transition-property: background-color, width, transform;
+ 
+    transition-duration: 2s, 1s;
+ 
+    transition: background-color, width 500ms, 500ms ease-in; */
+ 
+}
+ 
+/* modifying class */
+.item-1:hover {   /* hover psuedo class */
+    background-color: red;
+    width: 250px;
+}
+ 
+ 
+.item-2 {
+    /* SHORTHAND */
+    transition: transform 500ms ease-in;
+  
+    
+}
+
+ 
+.item-2:hover {
+    transform: translate(50px)
+}
+ 
+.item-3 {
+    transition: transform 1s ease-in;
+}
+  
+.item-3:hover {
+    transform: rotate(30deg)
+}
+ 
+
+
+/*  ANIMATION PROPERTY  */
+ 
+.item-4:hover {
+    
+}
+
+.item-5{
+
+}
+.item-6{
+
+}
+.item-7{
+
+}
+.item-8{
+
+}
+.item-9{
+
+}
+.item-9{
+
+}
+.item-10{
+
+} */

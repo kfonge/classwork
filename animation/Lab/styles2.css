@@ -1,0 +1,33 @@
+body{
+    margin:0;
+    background-color: black;
+    height:100vh   
+    color: white;
+}
+
+.item{
+    width:100px;
+    height:50px;
+    border:1px solid white;
+}
+
+#container:hover .item-1:{
+        width: 250px;
+    }
+
+
+.item-1 {
+    background-color: blue;
+    transition: 1s ease-in;
+}
+
+
+
+.item-2 {
+    background-color: red;
+    transition: 1s ease-in;
+}
+
+.item-2:hover {
+    width: 250px;
+}
