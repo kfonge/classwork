@@ -4,6 +4,8 @@ const express = require('express')
 const app = express()
 
 //Define a "root" route (home page)
+
+
 //Pass it two arguments: the first is the path "/"
 //and the secod is the callback with our homies "req" and 
 
