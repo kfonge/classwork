@@ -29,6 +29,8 @@ router.post('/meats', (req, res) => {
 })
 
 // Setup "show" route  
+//note, ":index" is a place holder for anything client enters into browser
+// this is also true for ".index" on 35
 router.get('/meats/:index', (req, res) => {
     res.send(meats[req.params.index])
 })
@@ -47,3 +49,5 @@ router.put('/meats/:index', (req, res) => {
 router.delete('/meats/:index', (req, res) => {
     res.send('Deleting a meat at index! (in DB)')
 })
+
+module.exports = router

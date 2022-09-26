@@ -47,3 +47,5 @@ router.put('/veggies/:index', (req, res) => {
 router.delete('/veggies/:index', (req, res) => {
     res.send('Deleting a veggie at index! (in DB)')
 })
+
+module.exports = router
