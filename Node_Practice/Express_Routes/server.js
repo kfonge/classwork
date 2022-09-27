@@ -17,7 +17,12 @@ app.engine('jsx', require('express-react-views').createEngine())
 
 //middleware
 app.use(express.urlencoded({extended:false}))
-
+app.use(express.static("public"))
+//Define middleware
+app.use((req, res, next) => {
+    console.log('I run for all routes')
+    next()
+})
 
 // app.use('/meats', meatRoutes)
 
@@ -30,8 +35,8 @@ app.use(express.urlencoded({extended:false}))
 
 
 app.use('/fruits', fruitRoutes)
-// app.use('/veggies', veggieRoutes)
-// app.use('/meats', meatRoutes)
+app.use('/veggies', veggieRoutes)
+app.use('/meats', meatRoutes)
 // app.use('/api/fruits', fruitRoutes)
 // app.use('/api/veggies', veggieRoutes)
 // app.use('/api/meats', meatRoutes)

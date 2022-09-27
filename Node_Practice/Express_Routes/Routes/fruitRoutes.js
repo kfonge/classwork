@@ -1,8 +1,8 @@
 //Load Express then get access
-const { application } = require('express')
+// const application  = require('express')
 const express = require('express')
 
-//bringin our packaged route
+//bringing our packaged route
 
 const router = express.Router()
 
@@ -15,23 +15,19 @@ const fruits = require('../models/fruits')
 // })
 
 
-//Define middleware
-application.use((req, res, next) => {
-    console.log('I run for all routes')
-    next()
-})
+
 
 // Setup "index" route, shows everything
 router.get('/', (req, res) => {
     // res.send(fruits)
     //now that we have view engine, use res.render instead of send
-    res.render('Index', { fruits: fruits })
+    res.render('fruits/Index', { fruits: fruits })
 })
 
 // Setup "new" route
 router.get('/new', (req, res) => {
     // res.send('<form>Create fruit</form>')
-    res.render('New')
+    res.render('fruits/New')
 })
 
 // Setup "create" route
@@ -53,7 +49,7 @@ router.post('/', (req, res) => {
 // Setup "show" route  
 router.get('/:index', (req, res) => {
     // res.send(fruits[req.params.index])
-    res.render('Show', { fruit: fruits[req.params.index] })// this becomes "ths.props" in Show component of server file
+    res.render('fruits/Show', { fruit: fruits[req.params.index] })// this becomes "ths.props" in Show component of server file
 })
 
 // Setup "edit" route
