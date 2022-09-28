@@ -23,6 +23,16 @@ router.get('/new', (req, res) => {
     res.send('<form>Create meat</form>')
 })
 
+// // Setup "destroy" route
+// router.delete('/:index', (req, res) => {
+//     res.send('Deleting a meat at index! (in DB)')
+// })
+
+// // Setup "update" route
+// router.put('/:index', (req, res) => {
+//     res.send('Updating a meat at index! (in DB)')
+// })
+
 // Setup "create" route
 router.post('/', (req, res) => {
     res.send('Creating a new meat! (in DB)')
@@ -34,15 +44,7 @@ router.get('/:index/edit', (req, res) => {
     res.send('<form>Edit meat</form>')
 })
 
-// // Setup "update" route
-// router.put('/:index', (req, res) => {
-//     res.send('Updating a meat at index! (in DB)')
-// })
 
-// // Setup "destroy" route
-// router.delete('/:index', (req, res) => {
-//     res.send('Deleting a meat at index! (in DB)')
-// })
 
 // Setup "show" route  
 //note, ":index" is a place holder for anything client enters into browser

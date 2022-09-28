@@ -9,12 +9,9 @@ class Index extends React.Component {
         const { fruits } = this.props
 
         return (
-           
             <DefaultLayout title="All Fruit" foodGroup="fruits">
- {/* //title and foodgroup are passed as props since they are attributes of DefaultLayout */}
-                <div>
                     <h1>Fruits Index Page</h1>
-                    <ul>
+                    <ul id="fruits-index">
                         {fruits.map((fruit) => {
                             return (
                                 <li key={fruit._id}>
@@ -27,8 +24,7 @@ class Index extends React.Component {
                     <nav>
                         <a href="/fruits/new">Create a new a fruit</a>
                     </nav>
-                </div>
-           </DefaultLayout>
+            </DefaultLayout>
         )
     }
 }

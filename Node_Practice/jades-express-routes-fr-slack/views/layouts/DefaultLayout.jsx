@@ -5,15 +5,14 @@ class DefaultLayout extends React.Component {
         return (
             <html>
                 <head>
+                    <title>{this.props.title}</title>
                     <link rel="stylesheet" href="/css/styles.css" />
-                    <title> {this.props.title}</title>
                 </head>
                 <body>
-                <nav>
+                    <nav>
                         <a href={`/${this.props.foodGroup}`}>{this.props.foodGroup}</a>
                     </nav>
                     {this.props.children}
-                    {/* available to any class property */}
                 </body>
             </html>
         )
