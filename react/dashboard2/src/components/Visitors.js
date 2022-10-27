@@ -1,10 +1,10 @@
-function Visitors() {
+function Visitors(props) {
     return (
         <div>
             <h3>
                 Website Visitors:
-                {props.num}
             </h3> 
+            <h3>{props.number}</h3>
     </div>
     )
 }

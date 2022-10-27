@@ -1,13 +1,13 @@
-// import Data from "./Data"
+// import Data from "./data"
 
 function SentAnal(props) {
+    console.log(props.number.num)
     return (
         <div className="sentAnal">
-        <h3>Sentiment Analysis</h3>
-            <h4>{props.num1}</h4>
-            <h4>{props.num2}</h4>
-            <h4>{props.num3}</h4>
         
+            <div>
+            <h4>{props.number.num}</h4>
+            </div>
         </div>
         )
 

@@ -1,5 +1,5 @@
 const Data = [
-    {num1:960},
-    {num2:122},
-    {num3:321}]
+    {num:960},
+    {num:122},
+    {num:321}]
 export default Data;
